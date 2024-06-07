@@ -31,7 +31,7 @@ This file contains additional data related to the store, department, and regiona
 
 ### test.csv
 
-This file is identical to train.csv, except we have withheld the weekly sales. You must predict the sales for each triplet of store, department, and date in this file.
+This file is identical to train.csv, except we have removed the weekly sales. We are predicting the sales for each triplet of store, department, and date in this file.
 
 ---
 
