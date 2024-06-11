@@ -8,6 +8,7 @@ This file contains anonymized information about the 45 stores, indicating the ty
 
 ### train.csv
 
+![alt text](image.png)
 Historical training data, which covers from 2010-02-05 to 2012-11-01. Within this file, we will find the following fields:
 
 - **Store** - store number
