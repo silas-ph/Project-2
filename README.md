@@ -1,36 +1,3 @@
-# Project-2
-
-The dataset essentially contains five CSV files:
-
-### stores.csv
-
-This file contains anonymized information about the 45 stores, indicating the type and size of the store.
-
-### train.csv
-
-Historical training data, which covers from 2010-02-05 to 2012-11-01. Within this file, we will find the following fields:
-
-- **Store** - store number
-- **Dept** - department number
-- **Date** - the week
-- **Weekly_Sales** - sales for the given department in the given store
-- **IsHoliday** - whether the week is a special holiday week
-
-### features.csv
-
-This file contains additional data related to the store, department, and regional activity for the given dates. It contains the following fields:
-
-- **Store** - the store number
-- **Date** - the week
-- **Temperature** - average temperature in the region
-- **Fuel_Price** - cost of fuel in the region
-- **MarkDown1-5** - anonymized data related to promotional markdowns that Walmart is running. MarkDown data is only available after Nov 2011, and is not available for all stores all the time. Any missing value is marked with an NA.
-- **CPI** - the consumer price index
-- **Unemployment** - the unemployment rate
-- **IsHoliday** - whether the week is a special holiday week
-
-### test.csv
-
 # Predicting Walmart Sales with Machine Learning
 
 ## Problem Statement
@@ -67,28 +34,28 @@ Visualizations such as heatmaps, scatter plots, and line graphs were employed to
 ### Key Correlations
 
 From the heatmap, Size (.24) and Dept (.15) seem to have the highest correlation with Weekly Sales.
-![alt text](image-1.png)
+![alt text](Plots/image-1.png)
 
 ### Average Weekly Sales Per Store
 
-![alt text](image-2.png)
+![alt text](Plots/image-2.png)
 Stores 20, 4, and 14 have the highest values. The store data was anonymized, and we do not know the location of the store.
 
 ### Sales Spikes
 
-![alt text](image-4.png)
+![alt text](Plots/image-4.png)
 Sales spike in November and December. As expected, November and December are the highest.
 
 ### Monthly Peaks
 
-![alt text](image-5.png)
+![alt text](Plots/image-5.png)
 
 - Month 12: Highest peak on Day 24 with sales of 27415.85
 - Month 11: Highest peak on Day 26 with sales of 22464.58
 
 ### Temperature Impact
 
-![alt text](image-6.png)
+![alt text](Plots/image-6.png)
 Very cold and very hot temperatures impact the Weekly Sales.
 
 ## Model Development and Evaluation
@@ -146,9 +113,9 @@ Feature importance analysis conducted using ensemble models like Random Forest, 
 
 ### Feature Importance Analysis
 
-![alt text](image-7.png)
-![alt text](image-8.png)
-![alt text](image-9.png)
+![alt text](Plots/image-7.png)
+![alt text](Plots/image-8.png)
+![alt text](Plots/image-9.png)
 Department and size are the two most important features.
 
 ## Hyperparameter Tuning
@@ -171,13 +138,11 @@ We chose two of the three models using the following variables.
 
 ### Overfitting Curves for Random Forest Hyperparameter Tuning
 
-![alt text](image-10.png)
-![Random Forest Overfitting Curves](path_to_random_forest_overfitting_curves_image)
+![alt text](Plots/image-10.png)
 
 ### Overfitting Curves for XGBoost Hyperparameter Tuning
 
-![alt text](image-11.png)
-![XGBoost Overfitting Curves](path_to_xgboost_overfitting_curves_image)
+![alt text](Plots/image-11.png)
 
 ## Choosing the Model and Adjusting the Settings
 
